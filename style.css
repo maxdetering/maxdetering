@@ -1,0 +1,221 @@
+body {
+    overflow: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    min-height: 100vh;
+    width: 100%;
+    color:#000;
+    background-color: white;
+    font-family: 'Avenir Next', sans-serif;
+    hyphens: auto;
+}
+
+h1{
+    font-style: normal;
+    text-transform: none;
+}
+
+h2{
+    font-style: normal;
+    text-transform: none;
+    text-decoration: normal;
+    font-weight: normal;
+    font-size: large;
+    margin: 0;
+}
+
+p{
+    text-align: block;
+    justify-content: center;
+}
+
+a{
+    color:#777
+}
+
+ul{
+    margin: 0;
+}
+
+.header{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header a{
+    text-decoration: none;
+    font-style: normal;
+    color:#000
+}
+
+.header label{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    text-underline-offset: .5em;
+    margin: 0;
+    padding: .5em 1em .5em 1em;
+    font-size: 16px;
+    text-align: center;
+    color: #777;
+}
+
+.header input[type=checkbox]{
+    display: none;
+}
+
+.header label:hover {
+    text-decoration: underline;
+    color:#000;
+}
+
+.logo{
+    font-family: 'Avenir Next', sans-serif;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0;
+    padding: 0px;
+    color:#000;
+    background-color: #fff;
+}
+
+#navbar-toggle-checkbox:checked ~ .navbar {
+    display: flex;
+}
+
+.navbar{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    text-transform: uppercase;
+    text-underline-offset: .5em;
+    color: #777;
+    padding: 0;
+    margin: 0 10% 0 10%;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+.navbar a{
+    display: inline-block;
+    padding: .5em 1em .5em 1em;
+    color:#777;
+    font-size: 16px;
+}
+
+.navbar a.active, .navbar a:hover:not(.active){
+    text-decoration: underline;
+    color: #000;
+}
+
+.portrait{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.text{
+    text-align: block;
+    font-size: 14px;
+    margin: 2em 10% 2em 10%;
+    flex: 1;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px 10% 0 10%;
+    padding: 5px;
+    border-top: solid;
+    border-top-color: #777;
+    border-top-width: 1px;
+    font-size: 16px;
+}
+
+.fa {
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #777;
+    font-style: normal;
+}
+  
+.fa:hover {
+    color: #777;
+    opacity: 0.7;
+}
+
+.two-column{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 2em 10% 2em 10%;
+}
+
+#arxivfeed{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 600px) {
+    .header label{
+        display: inline-block;
+    }
+    .navbar ul{
+        flex-direction: column;
+    }
+    .navbar{
+        display: none;
+        flex-direction: column;
+        border-top: 1px solid #777;
+        border-bottom: 1px solid #777;
+    }
+    .two-column{
+        flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body, .logo, .header a, .header a.active{
+      background:#000;
+      color:#fff;
+    }
+    .navbar a.active, .navbar a:hover:not(.active), .header label:hover{
+        color:#fff;
+        background-color:#000;
+    }
+    .navbar a, .header label{
+        color:#777;
+        background-color: #000;
+    }
+}
