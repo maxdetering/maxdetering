@@ -185,6 +185,60 @@ ul{
     margin: 2em 10% 2em 10%;
 }
 
+.cv{
+    text-align: block;
+    font-size: 14px;
+    margin: 2em 25% 2em 25%;
+    flex: 1;
+}
+
+.cv-title{
+    text-align: center;
+    text-transform: none;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+.cv-section{
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.cv-item {
+    margin-bottom: 0px;
+}
+.cv-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.cv-item-title {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.cv-item-period {
+    color: grey;
+    font-size: 0.9em;
+}
+.cv-item-location {
+    align-items: left;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+.cv-item-description {
+    margin-top: 0px;
+}
+
 #arxivfeed{
     display: flex;
     justify-content: center;
