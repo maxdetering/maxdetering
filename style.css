@@ -188,8 +188,9 @@ ul{
 .cv {
     text-align: block;
     font-size: 14px;
-    margin: 2em 25% 2em 25%;
-    flex: 1;
+    margin: 2em auto 2em auto;
+    width: 80%;
+    max-width: 700px;
 }
 
 .cv-title {
