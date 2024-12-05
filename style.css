@@ -179,10 +179,16 @@ ul{
 }
 
 .two-column {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: 2em 10% 2em 10%;
+    margin: 20px 10% 0 10%;
+    padding: 0px;
+    width: 80%;
+}
+
+.left-column{
+    flex: 1;
 }
 
 .cv {
@@ -241,8 +247,9 @@ ul{
 }
 
 #arxivfeed {
-    display: flex;
+    flex: 0;
     justify-content: center;
+    margin: 2em auto;
 }
 
 
