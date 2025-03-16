@@ -53,5 +53,27 @@
         <a href="https://scholar.google.com/citations?user=VWCr-9EAAAAJ&hl=en" class="fab fa-google-scholar"></a>
         <a href="mailto:maximilian.detering@kcl.ac.uk" class="fa fa-envelope"></a>
     </div>
+
+    <span id="last-updated" class="timestamp">Loading...</span>
+
+    <script>
+    async function fetchLastUpdated() {
+        const repo = "maxdetering/maxdetering"; // Replace with your repo
+        const url = `https://api.github.com/repos/${repo}/commits/main`; // Change 'main' if needed
+
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            const date = new Date(data.commit.committer.date);
+            const formattedDate = date.toISOString().split("T")[0]; // Extract YYYY-MM-DD
+            document.getElementById("last-updated").textContent = `Last updated: ${formattedDate.toLocaleString()}`;
+        } catch (error) {
+            console.error("Error fetching last update:", error);
+            document.getElementById("last-updated").textContent = "Failed to load update time.";
+        }
+    }
+
+    fetchLastUpdated();
+    </script>
 </body>
 </html>
