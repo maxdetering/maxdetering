@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +16,7 @@
     <script data-goatcounter="https://mdetering.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <title>Maximilian Detering</title>
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
@@ -40,7 +42,7 @@
             </ul>
         </div>
     </div>
-    
+
     <div class="cv">
         <h2 class="cv-title">Curriculum vitae</h2>
         <!-- Education Section -->
@@ -66,7 +68,9 @@
                 <span>RWTH Aachen University and University of California, Berkeley</span>
             </div>
             <p class="cv-item-description">
-                Completed a two-year program with a focus on <i>Quantum Field Theory and Gauge Theories</i>, and <i>Astroparticle Physics</i>. Developed a thesis on <i>Supernova constraints on sub-GeV dark sectors</i>.
+                Completed a two-year program with a focus on <i>Quantum Field Theory and Gauge Theories</i>, and
+                <i>Astroparticle Physics</i>. Developed a thesis on <i>Supernova constraints on sub-GeV dark
+                    sectors</i>.
             </p>
         </div>
         <div class="cv-item">
@@ -78,7 +82,9 @@
                 <span>RWTH Aachen University</span>
             </div>
             <p class="cv-item-description">
-                Gained foundational knowledge in physics, including theoretical physics, experimental physics, data science, and programming languages. Developed a thesis on <i>Axion-like particle production in beam-dump experiments</i>.
+                Gained foundational knowledge in physics, including theoretical physics, experimental physics, data
+                science, and programming languages. Developed a thesis on <i>Axion-like particle production in beam-dump
+                    experiments</i>.
             </p>
         </div>
 
@@ -125,19 +131,22 @@
         <h3 class="cv-section">Awards and Scholarships</h3>
         <ul>
             <li>
-                Springorum Medal 2024, Faculty for Mathematics, Computer Science and Natural Sciences, RWTH Aachen University
+                Springorum Medal 2024, Faculty for Mathematics, Computer Science and Natural Sciences, RWTH Aachen
+                University
             </li>
             <li>
                 Dean's List Awards, RWTH Aachen University
             </li>
             <li>
-                Scholarship from the German Academic Scholarship Foundation (<i>Studienstiftung des deutschen Volkes</i>)
+                Scholarship from the German Academic Scholarship Foundation (<i>Studienstiftung des deutschen
+                    Volkes</i>)
             </li>
             <li>
-                Honorary certificate from the prime minister of North-Rhine Westphalia for outstanding academic perfomance at high-school
+                Honorary certificate from the prime minister of North-Rhine Westphalia for outstanding academic
+                perfomance at high-school
             </li>
         </ul>
-    
+
         <!-- Voluntary Commitment Section -->
         <h3 class="cv-section">Voluntary Commitment</h3>
         <ul>
@@ -145,7 +154,8 @@
                 Spokesperson of the regional division Aachen, Germany, of <i>Studienstiftung des deutschen Volkes</i>
             </li>
             <li>
-                Spokesperson of the regional division Bay Area, California, of <i>Studienstiftung des deutschen Volkes</i>
+                Spokesperson of the regional division Bay Area, California, of <i>Studienstiftung des deutschen
+                    Volkes</i>
             </li>
             <li>
                 Co-founder and vice-president of the student initative <i>International Pool for Studies e.V.</i>
@@ -161,8 +171,10 @@
         <h3 class="cv-section">Talks and Seminars</h3>
         <ul>
             <li>
-                <i>Electroweak Vacuum Metastability from Axion-Higgs Criticality</i>, UK QFT XIII, Institute of Physics, 2024
-                <i>Naturalness in Particle Physics</i>, London Universities Physics Conference, Imperial College London, 2025
+                <i>Electroweak Vacuum Metastability from Axion-Higgs Criticality</i>, UK QFT XIII, Institute of Physics,
+                2024
+                <i>Naturalness in Particle Physics</i>, London Universities Physics Conference, Imperial College London,
+                2025
             </li>
         </ul>
     </div>
@@ -178,25 +190,27 @@
     </div>
 
     <span id="last-updated" class="timestamp">Loading...</span>
+    <span class="copyright">© Maximilian Detering 2025</span>
 
     <script>
-    async function fetchLastUpdated() {
-        const repo = "maxdetering/maxdetering"; // Replace with your repo
-        const url = `https://api.github.com/repos/${repo}/commits/main`; // Change 'main' if needed
+        async function fetchLastUpdated() {
+            const repo = "maxdetering/maxdetering"; // Replace with your repo
+            const url = `https://api.github.com/repos/${repo}/commits/main`; // Change 'main' if needed
 
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            const date = new Date(data.commit.committer.date);
-            const formattedDate = date.toISOString().split("T")[0]; // Extract YYYY-MM-DD
-            document.getElementById("last-updated").textContent = `Last updated: ${formattedDate.toLocaleString()}`;
-        } catch (error) {
-            console.error("Error fetching last update:", error);
-            document.getElementById("last-updated").textContent = "Failed to load update time.";
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                const date = new Date(data.commit.committer.date);
+                const formattedDate = date.toISOString().split("T")[0]; // Extract YYYY-MM-DD
+                document.getElementById("last-updated").textContent = `Last updated: ${formattedDate.toLocaleString()}`;
+            } catch (error) {
+                console.error("Error fetching last update:", error);
+                document.getElementById("last-updated").textContent = "Failed to load update time.";
+            }
         }
-    }
 
-    fetchLastUpdated();
+        fetchLastUpdated();
     </script>
 </body>
+
 </html>
