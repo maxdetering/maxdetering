@@ -149,6 +149,7 @@ ul{
 
 .text{
     text-align: block;
+    text-justify: inter-word;
     font-size: 14px;
     margin: 2em 10% 2em 10%;
     flex: 1;
@@ -203,6 +204,7 @@ ul{
     margin: 20px 10% 0 10%;
     padding: 0px;
     width: 80%;
+    flex: 1;
 }
 
 .left-column{
