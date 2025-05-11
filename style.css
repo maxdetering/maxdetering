@@ -244,17 +244,17 @@ ul{
 }
 
 #arxivcontainer .entry {
-    font-size: 12px !important; /* sets default for the block */
+    font-size: 14px !important; /* sets default for the block */
     padding-top: 1em !important;
 }
 
 #arxivcontainer .entrytitle {
-    font-size: 13px !important;
+    font-size: 14px !important;
     font-weight: bold;
 }
 
 #arxivcontainer .entryauthors {
-    font-size: 10px !important;
+    font-size: 14px !important;
     font-style: italic;
 }
 
