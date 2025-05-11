@@ -213,9 +213,13 @@ ul{
 
 /* -------- arXiv feed --------- */
 
-.feed {
-    padding: 0px 50px
+#arxivfeed {
+    flex: 0;
+    justify-content: center;
+    margin: 2em auto;
+    padding: 0 50px 0 50px;
 }
+
 #arxivcontainer {
     min-height: 300px !important;
     width: 100% !important;
@@ -311,12 +315,6 @@ ul{
     margin-top: 0px;
 }
 
-#arxivfeed {
-    flex: 0;
-    justify-content: center;
-    margin: 2em auto;
-}
-
 
 @media (max-width: 600px) {
     .header label{
@@ -337,6 +335,19 @@ ul{
     .portrait img{
         width: 80%;
         height: 80%;
+    }
+
+    #arxivfeed {
+        width: 100%;
+        padding: 0;
+    }
+
+    #arxivcontainer {
+        width: 100% !important;
+    }
+
+    #arxivcontainer .entry {
+        width: 95% !important;
     }
 }
 
