@@ -211,6 +211,51 @@ ul{
     flex: 1;
 }
 
+/* -------- arXiv feed --------- */
+
+.feed {
+    padding: 0px 50px
+}
+#arxivcontainer {
+    min-height: 300px !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white !important;
+}
+
+#arxivcontainer > #feedtitle {
+    background-color: #a52c25 !important;
+    color: white !important;
+}
+
+#arxivcontainer > #feedtitle a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+#arxivcontainer > #feedtitle:last-of-type {
+    margin-top: auto; /* push footer to bottom if space available */
+}
+
+#arxivcontainer .entry {
+    font-size: 12px !important; /* sets default for the block */
+    padding-top: 1em !important;
+}
+
+#arxivcontainer .entrytitle {
+    font-size: 13px !important;
+    font-weight: bold;
+}
+
+#arxivcontainer .entryauthors {
+    font-size: 10px !important;
+    font-style: italic;
+}
+
+/* -------------------------- */
+
 .cv {
     text-align: block;
     font-size: 14px;
@@ -288,6 +333,10 @@ ul{
     }
     .two-column{
         flex-direction: column;
+    }
+    .portrait img{
+        width: 80%;
+        height: 80%
     }
 }
 
